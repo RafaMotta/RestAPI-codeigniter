@@ -52,3 +52,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'ListTasks';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['ListTasks/list'] = 'ListTasks/list';
+$route['ListTasks/create'] = 'ListTasks/create';
+$route['ListTasks/insert'] = 'ListTasks/insert';
+$route['ListTasks/edit'] = 'ListTasks/edit/$1';
+$route['ListTasks/save'] = 'ListTasks/save';

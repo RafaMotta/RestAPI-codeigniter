@@ -40,7 +40,7 @@ class Tasks extends REST_Controller {
         $input = $this->input->post();
         $this->db->insert('cad_tarefa',$input);
      
-        $this->response(['Item created successfully.'], REST_Controller::HTTP_OK);
+        $this->response(['Tarefa criada.'], REST_Controller::HTTP_OK);
     } 
      
     /**
@@ -53,7 +53,7 @@ class Tasks extends REST_Controller {
         $input = $this->put();
         $this->db->update('cad_tarefa', $input, array('cod_tarefa'=>$id));
      
-        $this->response(['Item updated successfully.'], REST_Controller::HTTP_OK);
+        $this->response(['Tarefa atualizada.'], REST_Controller::HTTP_OK);
     }
      
     /**
@@ -65,7 +65,7 @@ class Tasks extends REST_Controller {
     {
         $this->db->delete('cad_tarefa', array('cod_tarefa'=>$id));
        
-        $this->response(['Item deleted successfully.'], REST_Controller::HTTP_OK);
+        $this->response(['Tarefa Deletada.'], REST_Controller::HTTP_OK);
     }
     	
 }
